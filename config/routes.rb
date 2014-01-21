@@ -1,21 +1,23 @@
 Instagram::Application.routes.draw do
-  get "about/about"
-
-  get "myanmar/index"
 
   root :to => "myanmar#index"
 
+  get "about/about"
+  get "myanmar/index"
   get "myanmar/yangon"
-
   get "myanmar/chaungthar"
-
   get "myanmar/mandalay"
-
   get "myanmar/ngwesaung"
-
   get "myanmar/pathein"
-
   get "myanmar/taunggyi"
+
+  match '/about', :to => 'about#about'
+  match '/yangon', :to => 'myanmar#yangon'
+  match '/mandalay', :to => 'myanmar#mandalay'
+  match '/taunggyi', :to => 'myanmar#taunggyi'
+  match '/pathein', :to => 'myanmar#pathein'
+  match '/ngwesaung', :to => 'myanmar#ngwesaung'
+  match '/chaungthar', :to => 'myanmar#chaungthar'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
