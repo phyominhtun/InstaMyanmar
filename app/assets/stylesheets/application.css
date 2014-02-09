@@ -20,13 +20,12 @@
   */
 #body {
 	background: #52b5a0;
- 	min-width: 650px;
+	min-width: 400px;
 }
 
 .insta_application_body {
  	background: #52b5a0;
  	max-width: 1000px;
- 	min-width: 650px;
  }
 
 
@@ -145,6 +144,15 @@ footer {
 	
 	#insta_application_body {
 		max-width: 650px;
+		margin: auto;
+	}
+
+}
+
+@media screen and (max-width: 700px) {
+	
+	#insta_application_body {
+		max-width: 350px;
 		margin: auto;
 	}
 

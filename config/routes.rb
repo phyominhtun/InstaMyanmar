@@ -18,6 +18,7 @@ Instagram::Application.routes.draw do
   match '/pathein', :to => 'myanmar#pathein'
   match '/ngwesaung', :to => 'myanmar#ngwesaung'
   match '/chaungthar', :to => 'myanmar#chaungthar'
+  match '/home', :to => 'myanmar#index'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
