@@ -1,13 +1,3 @@
-<% @instagram.each do |instagram| %>
-	<ul class="ic-appul">
-		<div id="ic-app">
-			<li class="ic-appuseravi"><img src="<%= instagram.user.profile_picture %>"></li>
-			<h3><i><%= instagram.user.username %></i></h3>
-			<a href="<%= instagram.link %>" target="_blank"><img src="<%= instagram.images.standard_resolution.url %>" class="ic-images"></a><br><br>
-			<p class="p"><a href="<%= instagram.images.standard_resolution.url %>" class="ic-download" download="InstaCity.jpg" target="_blank">Download</a></p>
-		</div>
-	</ul>
-<% end %>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -18,3 +8,13 @@
   ga('send', 'pageview');
 
 </script>
+<% @instagram.each do |instagram| %>
+	<ul class="ic-appul">
+		<div id="ic-app">
+			<li class="ic-appuseravi"><img src="<%= instagram.user.profile_picture %>"></li>
+			<h3><i><%= instagram.user.username %></i></h3>
+			<a href="<%= instagram.link %>" target="_blank"><img src="<%= instagram.images.standard_resolution.url %>" class="ic-images"></a><br><br>
+			<p class="p"><a href="<%= instagram.images.standard_resolution.url %>" class="ic-download" download="InstaCity.jpg" target="_blank">Download</a></p>
+		</div>
+	</ul>
+<% end %>
