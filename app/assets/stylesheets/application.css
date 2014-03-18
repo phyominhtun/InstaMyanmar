@@ -23,6 +23,11 @@
 	min-width: 400px;
 }
 
+#ic-app a:hover {
+	text-decoration: none;
+	color: #44486b;
+}
+
 .insta_application_body {
  	background: #52b5a0;
  	max-width: 1000px;
